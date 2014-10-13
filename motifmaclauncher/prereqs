@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# This is our chance to catch prerequisite failure before MML's event handlers
+# make it impossible for us to interactively display dialogue boxes. If we are
+# going to throw an error, we MUST do it here. Cameron Kaiser
+
+# Check for OpenMotif and X11
+test -d /usr/OpenMotif || exit 12
+test -d /Applications/Utilities/X11.app || exit 11
+
+# Get X11 up and running right away in the background so we can control it.
+open /Applications/Utilities/X11.app || exit 11
+
+exit 0

@@ -1,0 +1,4 @@
+echo '(there is no configure, there is only zuul. I mean make)'
+echo
+echo '% make'
+make

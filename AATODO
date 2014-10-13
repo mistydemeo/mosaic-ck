@@ -1,0 +1,36 @@
+System
+------
+Embed Perl interpreter (test back to 5.004; see perlembed)
+	there must be an option to not compile with it, too.
+SSL
+Cookies
+Fix and reenable SOCKS
+Should be able to scroll and interact while things are loading.
+
+Alternative renderer
+--------------------
+Widget redraw needs work.
+
+Expand UTF-8 table
+
+<nobr>
+
+Support bgcolor (secretly for any block-level element, including
+<div> and <td>)
+
+<font color>
+<font size>
+
+Frames should render as <a href=> a la Lynx
+
+Read through the delayed image code, figure out how to build a list
+of style sheets (including this document if it has <style>), and then
+hold on to them OR better still integrate them into the document itself
+
+Once Perl is embedded, write code to translate CSS into block level code.
+Make an option to turn it on and off.
+
+Interface
+---------
+Scroll to an anchor/fragment
+

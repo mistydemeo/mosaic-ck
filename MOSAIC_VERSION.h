@@ -1,0 +1,1 @@
+src/MOSAIC_VERSION.h

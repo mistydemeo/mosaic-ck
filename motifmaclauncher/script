@@ -1,0 +1,47 @@
+#!/bin/sh
+
+# This actually starts us up. All errors now cause the app to just quit. Cameron Kaiser
+
+export DIR=`dirname "$0"`
+cd $DIR
+export TMP=/tmp/$UID/TemporaryItems
+if [ ! -d "$TMP" ] ; then
+	export TMP=/tmp/$UID
+	# this damn better well exist
+fi
+
+# Leopard and up don't have /usr/bin/open-x11, and don't need it, so this is only
+# for Tiger users. hell, Panther too, who cares.
+if [ -x /usr/bin/open-x11 ] ; then
+
+export DISPLAY=:0 # because the below blows up. it SHOULD let us get the display, but it doesn't.
+
+###### THIS IS COMMENTED OUT ######
+if [ 0 == 1 ] ; then
+# it seems to be due to file descriptor security on the temp dir.
+export DISMUTEX=/dev/null
+rm -f $TMP/motifl.$$
+cat <<EOF >$TMP/motifl.$$
+#!/bin/sh
+
+exit # I do nothing right now
+if [ "\$DISPLAY"x == "x" ] ; then
+	echo ":0" > $DISMUTEX
+else
+	echo "\$DISPLAY" > $DISMUTEX
+fi
+EOF
+# WE MUST RUN OPEN-X11 at least once. AppleScripting it is not enough.
+/usr/bin/open-x11 $TMP/motifl.$$
+rm -rf $TMP/motifl.$$
+
+# fail if X11 has quit for some reason
+ps -wx -ocommand | grep -e '[X]11' > /dev/null || exit 11
+
+fi
+###### THIS IS COMMENTED OUT ######
+
+fi # if open-x11
+
+(cd "$DIR" ; exec ./mosaic-mml $@ )
+exit

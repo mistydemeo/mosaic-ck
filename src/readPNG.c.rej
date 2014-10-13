@@ -1,0 +1,70 @@
+***************
+*** 145,169 ****
+          }
+  #endif
+  
+-         png_read_destroy(png_ptr, info_ptr, (png_info *)0);
+  
+          if(png_pixels != NULL)
+              free((char *)png_pixels);
+          if(row_pointers != NULL)
+              free((png_byte **)row_pointers);
+- 
+-         free((char *)png_ptr);
+-         free((char *)info_ptr);
+  
+          return 0;
+      }
+  
+-     /* SWP -- Hopefully to fix cores on bad PNG files */
+-     png_set_message_fn(png_ptr,png_get_msg_ptr(png_ptr),NULL,NULL);
+- 
+-         /* initialize the structures */
+      png_info_init(info_ptr);
+-     png_read_init(png_ptr);
+  
+          /* set up the input control */
+      png_init_io(png_ptr, infile);
+--- 145,164 ----
+          }
+  #endif
+  
++         png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
+  
+          if(png_pixels != NULL)
+              free((char *)png_pixels);
+          if(row_pointers != NULL)
+              free((png_byte **)row_pointers);
++ 
++         png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
+  
+          return 0;
+      }
+  
++         /* initialize the structure */
+      png_info_init(info_ptr);
+  
+          /* set up the input control */
+      png_init_io(png_ptr, infile);
+***************
+*** 409,420 ****
+      free((png_byte **)row_pointers);
+  
+          /* clean up after the read, and free any memory allocated */
+-     png_read_destroy(png_ptr, info_ptr, (png_info *)0);
+- 
+- 
+-         /* free the structures */
+-     free((char *)png_ptr);
+-     free((char *)info_ptr);
+  
+      return pixmap;
+  }
+--- 404,410 ----
+      free((png_byte **)row_pointers);
+  
+          /* clean up after the read, and free any memory allocated */
++     png_destroy_read_struct(&png_ptr, &info_ptr, NULL);
+  
+      return pixmap;
+  }

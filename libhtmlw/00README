@@ -1,0 +1,8 @@
+Look for ADD NEW HTML TAGS HERE for where you would splice in new stuff.
+(hardly comprehensive)
+
+grep TAGS *.c *.h
+seems to suffice
+
+Cameron Kaiser
+

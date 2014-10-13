@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	0867D6ABFE840B52C02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 527}}";
+			sepNavSelRange = "{230, 0}";
+			sepNavVisRect = "{{0, 0}, {909, 527}}";
+			sepNavWindowFrame = "{{972, 194}, {948, 656}}";
+		};
+	};
+	20286C28FDCF999611CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeExecutable = F0CCAADA113B8D74002ED5B9 /* Mosaic-CK */;
+		activeTarget = 8D0C4E890486CD37000505A6 /* Mosaic-CK */;
+		addToTargets = (
+			8D0C4E890486CD37000505A6 /* Mosaic-CK */,
+		);
+		breakpoints = (
+		);
+		breakpointsGroup = F04B304910E9209C00BDC133 /* XCBreakpointsBucket */;
+		codeSenseManager = F06648F810E89924008794D5 /* Code sense */;
+		executables = (
+			F0CCAADA113B8D74002ED5B9 /* Mosaic-CK */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					210,
+					20,
+					110,
+					109,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					131,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 300574586;
+			PBXWorkspaceStateSaveDate = 300574586;
+		};
+		perUserProjectItems = {
+			F03D578B11EA524D00380989 /* PBXTextBookmark */ = F03D578B11EA524D00380989 /* PBXTextBookmark */;
+			F0769FD511EA678400C58C7B /* PBXTextBookmark */ = F0769FD511EA678400C58C7B /* PBXTextBookmark */;
+		};
+		sourceControlManager = F06648F710E89924008794D5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	20286C2BFDCF999611CA2CEA /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 11088}}";
+			sepNavSelRange = "{24682, 0}";
+			sepNavVisRect = "{{0, 10052}, {909, 527}}";
+			sepNavWindowFrame = "{{842, 108}, {948, 656}}";
+		};
+	};
+	664C29F0060ECDC4006EC560 /* openDoc */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 527}}";
+			sepNavSelRange = "{33, 0}";
+			sepNavVisRect = "{{0, 0}, {909, 527}}";
+			sepNavWindowFrame = "{{84, 334}, {948, 656}}";
+		};
+	};
+	8D0C4E890486CD37000505A6 /* Mosaic-CK */ = {
+		activeExec = 0;
+		executables = (
+			F0CCAADA113B8D74002ED5B9 /* Mosaic-CK */,
+		);
+	};
+	8D0C4E960486CD37000505A6 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 560}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {909, 527}}";
+			sepNavWindowFrame = "{{15, 397}, {948, 656}}";
+		};
+	};
+	B8DCE048056DAC5000C390B0 /* script */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 672}}";
+			sepNavSelRange = "{1138, 0}";
+			sepNavVisRect = "{{0, 131}, {909, 527}}";
+			sepNavWindowFrame = "{{759, 273}, {948, 656}}";
+		};
+	};
+	F03D578B11EA524D00380989 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.c */;
+		name = "main.c: 732";
+		rLen = 0;
+		rLoc = 24682;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 24223;
+	};
+	F04B304910E9209C00BDC133 /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	F04B306A10E9230900BDC133 /* quitApp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 527}}";
+			sepNavSelRange = "{77, 0}";
+			sepNavVisRect = "{{0, 0}, {909, 527}}";
+			sepNavWindowFrame = "{{895, 285}, {948, 656}}";
+		};
+	};
+	F06648F710E89924008794D5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	F06648F810E89924008794D5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	F06F03B810F19C10003BA0FB /* prereqs */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {909, 527}}";
+			sepNavSelRange = "{338, 0}";
+			sepNavVisRect = "{{0, 0}, {909, 527}}";
+			sepNavWindowFrame = "{{588, 108}, {948, 656}}";
+		};
+	};
+	F0769FD511EA678400C58C7B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20286C2BFDCF999611CA2CEA /* main.c */;
+		name = "main.c: 732";
+		rLen = 0;
+		rLoc = 24682;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 24223;
+	};
+	F0CCAADA113B8D74002ED5B9 /* Mosaic-CK */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Mosaic-CK";
+		sourceDirectories = (
+		);
+	};
+}
