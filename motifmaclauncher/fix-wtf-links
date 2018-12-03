@@ -1,0 +1,5 @@
+#!/bin/csh -f
+
+foreach w (Xmu.6 Xt.6 Xext.6 SM.6 ICE.6 Xpm.4 X11.6)
+install_name_tool -change /usr/X11R6/lib/lib${w}.dylib /usr/X11/lib/lib${w}.dylib motifmaclauncher/mosaic-mml-wtf
+end

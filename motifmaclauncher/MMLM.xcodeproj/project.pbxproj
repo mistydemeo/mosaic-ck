@@ -17,6 +17,7 @@
 		F04B306B10E9230900BDC133 /* quitApp in Resources */ = {isa = PBXBuildFile; fileRef = F04B306A10E9230900BDC133 /* quitApp */; };
 		F06F03B910F19C10003BA0FB /* prereqs in Resources */ = {isa = PBXBuildFile; fileRef = F06F03B810F19C10003BA0FB /* prereqs */; };
 		F076774B10E9843D00F90591 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F076774A10E9843D00F90591 /* icon.icns */; };
+		F0C170161BDC3B4D0084CD76 /* mosaic-mml-wtf in Resources */ = {isa = PBXBuildFile; fileRef = F0C170151BDC3B4D0084CD76 /* mosaic-mml-wtf */; };
 		F0CCAAD8113B8D5C002ED5B9 /* mosaic-mml in Resources */ = {isa = PBXBuildFile; fileRef = F0CCAAD7113B8D5C002ED5B9 /* mosaic-mml */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +35,9 @@
 		F04B306A10E9230900BDC133 /* quitApp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = quitApp; sourceTree = "<group>"; };
 		F06F03B810F19C10003BA0FB /* prereqs */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = prereqs; sourceTree = "<group>"; };
 		F076774A10E9843D00F90591 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		F0C170151BDC3B4D0084CD76 /* mosaic-mml-wtf */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "mosaic-mml-wtf"; sourceTree = "<group>"; };
 		F0CCAAD7113B8D5C002ED5B9 /* mosaic-mml */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "mosaic-mml"; sourceTree = "<group>"; };
-		F0CCAAD9113B8D74002ED5B9 /* Mosaic-CK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mosaic-CK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0CCAAD9113B8D74002ED5B9 /* Mosaic-CK.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Mosaic-CK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				F0CCAAD7113B8D5C002ED5B9 /* mosaic-mml */,
+				F0C170151BDC3B4D0084CD76 /* mosaic-mml-wtf */,
 				F06F03B810F19C10003BA0FB /* prereqs */,
 				F076774A10E9843D00F90591 /* icon.icns */,
 				F04B306A10E9230900BDC133 /* quitApp */,
@@ -167,6 +170,7 @@
 				F076774B10E9843D00F90591 /* icon.icns in Resources */,
 				F06F03B910F19C10003BA0FB /* prereqs in Resources */,
 				F0CCAAD8113B8D5C002ED5B9 /* mosaic-mml in Resources */,
+				F0C170161BDC3B4D0084CD76 /* mosaic-mml-wtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

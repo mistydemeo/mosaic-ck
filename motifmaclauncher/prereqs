@@ -4,11 +4,16 @@
 # make it impossible for us to interactively display dialogue boxes. If we are
 # going to throw an error, we MUST do it here. Cameron Kaiser
 
+# Check that there is a /usr/X11R6 or /usr/X11.
+test -d /usr/X11R6 || test -d /usr/X11 || exit 13
+
 # Check for OpenMotif and X11
-test -d /usr/OpenMotif || exit 12
-test -d /Applications/Utilities/X11.app || exit 11
+# We require the Floodgap version now.
+test -d /Applications/OpenMotif21 || exit 12
 
 # Get X11 up and running right away in the background so we can control it.
-open /Applications/Utilities/X11.app || exit 11
+# Prefer XQuartz if it exists.
+test -d /Applications/Utilities/XQuartz.app && open /Applications/Utilities/XQuartz.app && exit 10
 
-exit 0
+test -d /Applications/Utilities/X11.app && open /Applications/Utilities/X11.app && exit 0
+exit 11

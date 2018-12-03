@@ -40,8 +40,8 @@ sysconfigflags = -O3 -D_BSD -DMOTIF1_2 -DHAVE_ERRLIST -DUSE_STDARG -D__bsdi__
 syslibs = 
 
 #### X include file locations -- if your platform puts the X include
-xinc = -I/usr/OpenMotif/include -I/usr/X11R6/include
-xlibs = -L/usr/OpenMotif/lib -L/usr/X11R6/lib -lXm -lXmu -lXt -lXext -lSM -lICE -lXpm -lX11
+xinc = -I/Applications/OpenMotif21/include -I/usr/X11/include
+xlibs = -L/Applications/OpenMotif21/lib -L/usr/X11/lib -lXm -lXmu -lXt -lXext -lSM -lICE -lXpm -lX11
 
 
 #### DTM AND HDF SUPPORT; READ CAREFULLY

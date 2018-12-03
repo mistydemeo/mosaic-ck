@@ -230,7 +230,7 @@ clean:
 	cd libnut; $(MAKE) clean
 	cd libwww2; $(MAKE) clean
 	cd src; $(MAKE) clean MOSAIC="Mosaic"
-	rm -f motifmaclauncher/mosaic-mml
+	rm -f motifmaclauncher/mosaic-mml motifmaclauncher/mosaic-mml-wtf
 	rm -rf motifmaclauncher/build
 	@echo "Done cleaning..."
 

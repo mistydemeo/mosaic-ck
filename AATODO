@@ -1,11 +1,12 @@
 System
 ------
-Embed Perl interpreter (test back to 5.004; see perlembed)
-	there must be an option to not compile with it, too.
-SSL
-Cookies
+Get mousewheel working (see http://colas.nahaboo.net/mouse-wheel-scroll/ )
 Fix and reenable SOCKS
 Should be able to scroll and interact while things are loading.
+SSL
+Embed Perl interpreter (test back to 5.004; see perlembed)
+	there must be an option to not compile with it, too.
+Cookies
 
 Alternative renderer
 --------------------

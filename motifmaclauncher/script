@@ -43,5 +43,13 @@ fi
 
 fi # if open-x11
 
-(cd "$DIR" ; exec ./mosaic-mml $@ )
+# Starting with El Crapitan, things linked against /usr/X11R6 don't work.
+# Since /usr/X11 was preferred in 10.5, though, we keep the alternative
+# linked binary universal.
+BINARY=mosaic-mml-wtf
+if [ -d /usr/X11R6 ] ; then
+BINARY=mosaic-mml
+fi
+
+(cd "$DIR" ; exec ./$BINARY $@ )
 exit

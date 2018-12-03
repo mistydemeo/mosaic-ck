@@ -40,8 +40,8 @@ sysconfigflags = -O3 -D_BSD -DMOTIF1_2 -DHAVE_ERRLIST -DUSE_STDARG -D__bsdi__ -f
 syslibs = 
 
 #### X include file locations -- if your platform puts the X include
-xinc = -I/usr/OpenMotif/include -I/usr/X11R6/include
-xlibs = -L/usr/OpenMotif/lib -L/usr/X11R6/lib -lXm -lXmu -lXt -lXext -lSM -lICE -lXpm -lX11
+xinc = -I/Applications/OpenMotif21/include -I/usr/X11R6/include
+xlibs = -L/Applications/OpenMotif21/lib -L/usr/X11R6/lib -lXm -lXmu -lXt -lXext -lSM -lICE -lXpm -lX11
 
 
 #### DTM AND HDF SUPPORT; READ CAREFULLY
@@ -177,7 +177,11 @@ QUANTIFY = quantify
 
 default: $(dtmdirs) libwww2 libXmx libhtmlw libnut src
 	cp src/Mosaic motifmaclauncher/mosaic-mml
+	lipo -remove ppc motifmaclauncher/mosaic-mml -output motifmaclauncher/mosaic-mml-wtf
+	csh motifmaclauncher/fix-wtf-links
+	( cd motifmaclauncher ; xcodebuild )
 	@echo \*\*\* Welcome to NCSA Mosaic.
+
 purifyd: $(dtmdirs) libwww2 libXmx libhtmlw libnut src-purifyd
 	@echo \*\*\* Welcome to Purify'd NCSA Mosaic.
 quantifyd: $(dtmdirs) libwww2 libXmx libhtmlw libnut src-quantifyd

@@ -1085,6 +1085,15 @@ static XmxCallback (anchor_cb)
   int force_newwin = (event->button == Button2 ? 1 : 0);
   int old_binx_flag;
 
+#ifdef Button4
+#ifdef Button5
+  if (event->button == Button4)
+	fprintf(stderr, "scroll up\n");
+  if (event->button == Button5)
+	fprintf(stderr, "scroll down\n");
+#endif
+#endif
+
   if (!win)
     return;
 
@@ -1478,6 +1487,8 @@ void UpdateButtons (Widget w)
                          &event))
     {
       XButtonEvent *bevent = &(event.xbutton);
+	if (bevent->button == Button4)
+		fprintf(stderr, "scroll up\n");
       if (bevent->window == XtWindow (current_win->logo))
         {
 	  sucka_press_my_globe_i_post_his_event();
@@ -1663,6 +1674,8 @@ void mo_presentation_mode(mo_window *win) {
 	}
 }
 
+/* We need to do something like this for Btn4Down (start) Btn4Up (stop) Up
+	and Btn5Down (start) Btn5Up (stop) Down scroll wheel. */
 
 /****************************************************************************
  * name:    mo_view_keypress_handler (PRIVATE)
@@ -1699,7 +1712,7 @@ static XmxEventHandler (mo_view_keypress_handler)
      the above function return 0 as the _key, this fixes it -- TPR */
   if(!_key)
     _key = XKeycodeToKeysym(XtDisplay(win->view), event->xkey.keycode, 0);
-  
+
   /* Insert trailing Nil. */
   _buffer[_count] = '\0';
 
